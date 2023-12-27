@@ -79,8 +79,6 @@ def clean_code(df1):
 
 
 def order_metric(df1):
-    st.markdown('# Orders by Day')
-
     #Calculando a quantidade de pedidos por dia
     df_aux = df1.loc[:,['ID', 'Order_Date']].groupby('Order_Date').count().reset_index()
 
